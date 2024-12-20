@@ -52,5 +52,9 @@ include('conexion_db.php');
         <?php
     }
     ?>
+    
+
+    <button class="regresar"><a href="index.php">Regresar</a></button>
+
 </body>
 </html>

@@ -1,10 +1,13 @@
 <?php
 
-include('conexion_db.php');
+include('conexion_db.php');// Importa el archivo conexion_db.php para usar las funciones guardar_pelicula y listar_peliculas.
 
 $mensaje = "";
 
-// Se pregunta si existe movie_name y release_year en POST
+// VALIDACIÓN DEL FORMULARIO
+//Se pregunta si existe movie_name y release_year en POST
+
+//La función isset() comprueba si esas variables fueron enviadas a través del formulario
 if (isset($_POST['movie_name']) && isset($_POST['release_year']))
 {
     // Recibimos los datos desde la vista
@@ -25,6 +28,7 @@ if (isset($_POST['movie_name']) && isset($_POST['release_year']))
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="listar_peliculas.css">
     <title>Registro de Películas</title>
 
     <link rel="stylesheet" href="style/guardar_peliculas.css">
@@ -40,7 +44,7 @@ if (isset($_POST['movie_name']) && isset($_POST['release_year']))
         </div>
         <div class="form-group">
             <label for="release-year">Año de Estreno:</label>
-            <input type="number" id="release-year" name="release_year" placeholder="Ingresa el año (ej: 2024)" min="1888" max="2099" required>
+            <input type="number" id="release-year" name="release_year" placeholder="Ingresa el año (Ej: 2024)" min="1888" max="2099" required>
         </div>
         <div class="form-actions">
             <button type="submit">Registrar</button>

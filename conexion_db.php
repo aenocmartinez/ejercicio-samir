@@ -6,7 +6,7 @@ function guardar_pelicula($movie_name, $realese_year)
     $servidor = "localhost";
     $usuario = "root";
     $contraseña = "";
-    $baseDeDatos = "db_pelicula";
+    $baseDeDatos = "db_peliculas";
 
     // Crear conexión
     $conexion = new mysqli($servidor, $usuario, $contraseña, $baseDeDatos);
@@ -46,7 +46,7 @@ function listar_peliculas() {
     $servidor = "localhost";
     $usuario = "root";
     $contraseña = "";
-    $baseDeDatos = "db_pelicula";
+    $baseDeDatos = "db_peliculas";
 
     // Crear conexión
     $conexion = new mysqli($servidor, $usuario, $contraseña, $baseDeDatos);

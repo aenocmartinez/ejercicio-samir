@@ -1,9 +1,4 @@
-drop database if exists db_pelicula;
-create database db_pelicula;
 
-use db_pelicula;
-
-drop table if exists peliculas;
 CREATE TABLE `peliculas` (
 	`id` INTEGER NOT NULL AUTO_INCREMENT,
 	`nombre` VARCHAR(100) NOT NULL,
