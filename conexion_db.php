@@ -30,7 +30,7 @@ function guardar_pelicula($movie_name, $realese_year)
     $respuesta = false;
     // Ejecutar la consulta
     if ($stmt->execute()) {
-        return true;
+        $respuesta = true;
     }
 
     // Cerrar la declaración y la conexión
