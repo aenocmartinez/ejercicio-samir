@@ -27,7 +27,7 @@ body {
     color: #555;
 }
 .form-group input {
-    width: 100%;
+    width: 95%;
     padding: 10px;
     font-size: 16px;
     border: 1px solid #ccc;
@@ -51,4 +51,9 @@ body {
 }
 .form-actions button:hover {
     background-color: #0056b3;
+}
+a{
+    font-size: 16px;
+    text-decoration: none;
+    color: black;
 }
