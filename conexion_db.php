@@ -74,3 +74,5 @@ function listar_peliculas() {
 
     return $datos;
 }
+
+?>
